@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: #FFFFFF;" stylesheets="@CSS/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmesaj.FXMLDocumentController">
+   <children>
+      <BorderPane prefWidth="1000.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER_RIGHT" prefHeight="50.0" styleClass="bottomLine" stylesheets="@CSS/Style.css" BorderPane.alignment="CENTER_RIGHT">
+               <children>
+                  <StackPane prefHeight="50.0" prefWidth="50.0" styleClass="buttons" stylesheets="@CSS/Style.css">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="buttons">
+                           <image>
+                              <Image url="@Image/Icons/menu.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                          
+                        </ImageView>
+                     </children>
+                     
+                  </StackPane>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <VBox prefWidth="800.0" styleClass="bottomLine" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minHeight="50.0" prefHeight="50.0" prefWidth="800.0" styleClass="bottomLine">
+                     <children>
+                        <Label maxWidth="1.7976931348623157E308" text="User Name" textFill="#5e5050" HBox.hgrow="ALWAYS" />
+                        <StackPane prefHeight="50.0" prefWidth="50.0" styleClass="buttons">
+                           <children>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="buttons">
+                                 <image>
+                                    <Image url="@Image/Icons/add-user.png" />
+                                 </image>
+                                
+                              </ImageView>
+                           </children>
+                           
+                        </StackPane>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </HBox>
+                  <ScrollPane fx:id="MessageScroll" fitToWidth="true" pannable="true" vvalue="1.0" VBox.vgrow="ALWAYS">
+                     <content>
+                        <VBox fx:id="messageList" />
+                     </content>
+                  </ScrollPane>
+                  <StackPane prefHeight="70.0" styleClass="MessageSend" stylesheets="@CSS/Style.css">
+                     <children>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="70.0" styleClass="MessageText" stylesheets="@CSS/Style.css">
+                           <opaqueInsets>
+                              <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                           </opaqueInsets>
+                           <children>
+                              <StackPane prefWidth="50.0" styleClass="buttons" stylesheets="@CSS/Style.css">
+                                 <children>
+                                    <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="buttons">
+                                       <image>
+                                          <Image url="@Image/Icons/attachment.png" />
+                                       </image>
+                                       <StackPane.margin>
+                                          <Insets />
+                                       </StackPane.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </children>
+                                 
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </StackPane>
+                              <TextField fx:id="MessageText" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Mesaj" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+                              <Label fx:id="Send" alignment="CENTER" maxHeight="1.7976931348623157E308" onMouseClicked="#SendClicked" styleClass="buttons" text="Gönder" textFill="#c5b5b5">
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                     </padding>
+                  </StackPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+         <left>
+            <VBox prefHeight="532.0" prefWidth="248.0" styleClass="rightLine" stylesheets="@CSS/Style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane>
+                     <children>
+                        <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="10.0" styleClass="search">
+                           <children>
+                              <StackPane prefHeight="50.0" prefWidth="50.0">
+                                 <children>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" styleClass="buttons">
+                                       <image>
+                                          <Image url="@Image/Icons/search.png" />
+                                       </image>
+                                      
+                                    </ImageView>
+                                 </children>
+                                 
+                              </StackPane>
+                              <TextField focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Arama" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+                     </padding>
+                  </StackPane>
+                  <ScrollPane fx:id="GelenScroll" fitToWidth="true" pannable="true" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <content>
+                        <VBox fx:id="kullaniciList" />
+                     </content>
+                  </ScrollPane>
+                  <StackPane minHeight="70.0" prefHeight="70.0" prefWidth="247.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #2DCC70; -fx-background-radius: 40;" text="Button">
+                           <effect>
+                              <DropShadow color="#00000033" />
+                           </effect>
+                          
+                        </Button>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+      <AnchorPane fx:id="Profil_Anchor" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

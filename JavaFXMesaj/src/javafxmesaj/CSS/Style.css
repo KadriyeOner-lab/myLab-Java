@@ -1,0 +1,96 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02.Kas.2019, 11:57:08
+    Author     : kadriye
+*/
+.FonBackgraund{
+    -fx-background-color: #FFFFFF;
+    
+    }
+.avatar .decoration{
+        -fx-fill: transparent;
+}
+.profilBackgraund{
+    -fx-background-image: url(../Image/back..jpg);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+.bottomLine{
+    -fx-border-color: #ACAEB0;
+    -fx-border-width: 0 0 1 0;
+}
+.rightLine{
+    -fx-border-color: #ACAEB0;
+    -fx-border-width: 0 1 0 0;
+}
+.topLine{
+    -fx-border-color: #ACAEB0;
+    -fx-border-width: 1 0 0 0;
+}
+.buttons:hover{
+    -fx-background-color: #F3F3F3;
+}
+.MessageSend{
+    -fx-background-color: #F5F6F6;
+    -fx-border-color: #ACAEB0;
+    -fx-border-width: 1 0 0 0;
+}
+.MessageText{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #ACAEB0;
+    -fx-border-radius: 5;
+}
+.search{
+    -fx-border-color: #ACAEB0;
+    -fx-border-radius: 50%;
+    
+}
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+.scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.scroll-pane .scroll-bar:vertical{
+    -fx-background-color: transparent;
+}
+.scroll-pane .scroll-bar:vertical .increment-button{
+    -fx-background-color: transparent;
+}
+.scroll-pane .scroll-bar:vertical .increment-button .increment-arrow{
+    -fx-background-color: transparent;
+}
+.scroll-pane .scroll-bar:vertical .decrement-button{
+    -fx-background-color: transparent;
+}
+.scroll-pane .scroll-bar:vertical .decrement-button .decrement-arrow{
+    -fx-background-color: transparent;
+}
+.scroll-pane .scroll-bar:vertical .thumb{
+    -fx-background-color: #C1C1C1;
+    -fx-background-insets: 5 5 5 5;
+}
+.Count{
+    -fx-background-color: #3498db;
+    -fx-background-radius: 100%;
+    -fx-text-fill: #FFFFFF;
+}
+.nonSelection{
+   -fx-border-color: #ACAEB060;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-image-insets: 0 10 0 10;
+}
+.nonSelection:hover{
+   -fx-background-color: #F5F6F6;
+}
+.Selection{
+    -fx-background-color: #F5F6F6;
+    -fx-border-color: #2ecc71;
+    -fx-border-width: 0 0 0 5;
+    
+}
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Avatar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<fx:root alignment="CENTER_LEFT" prefHeight="80.0" spacing="10.0" type="HBox" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Avatar fx:id="UserImage" radius="30.0">
+         <image>
+            <Image url="@../Image/zehra.jpg" />
+         </image>
+      </Avatar>
+      <VBox alignment="CENTER_LEFT" spacing="10.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label fx:id="UserName" text="Zehra ÖNER" textFill="#5b4949">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Circle fx:id="Online" fill="#4cf522" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+               </children>
+            </HBox>
+            <Label fx:id="Mesaj" text="Gelen Mesaj" textFill="#756e6e" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Label fx:id="Time" prefHeight="17.0" prefWidth="37.0" textFill="#756e6e" />
+            <Label fx:id="Count" alignment="CENTER" minHeight="20.0" minWidth="20.0" prefHeight="20.0" prefWidth="20.0" styleClass="Count" text="25" />
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets left="12.0" right="12.0" />
+   </padding>
+</fx:root>
